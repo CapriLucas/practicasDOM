@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicios Del Dom</title>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="encabezado">
+			<h1>Ejercicios DOM</h1>
+		</header>
+		<p>Con alt+t Cambias el titulo del header</p>
+		<p>Con alt+p cambias de color de header</p>
+
+		<section class="seccion" id="seccion-1">
+			<h2>Reloj digital y alarma sonora</h2>
+			<div class="reloj">
+				<h3>00:00:00</h3>
+			</div>
+			<button id="activar-reloj">activar-reloj</button>
+			<button id="desactivar-reloj" disabled>desactivar-reloj</button>
+			<button id="activar-alarma">activar-alarma</button>
+			<button id="desactivar-alarma" disabled>desactivar-alarma</button>
+		</section>
+		<section class="seccion" id="seccion-2">
+			<h2>Eventos del teclado</h2>
+			<div class="contenedor-bola">
+				<div class="bola"></div>
+			</div>
+		</section>
+		<section class="seccion" id="seccion-3">
+			<h2>Temporizador</h2>
+			<h4 id="temporizador"></h4>
+		</section>
+		<section class="seccion" id="seccion-4">
+			<h2>Seccion 4</h2>
+		</section>
+
+		<div class="menu">
+			<a href="#seccion-1" class="hijo-menu">Reloj digital y alarma sonora</a>
+			<a href="#seccion-2" class="hijo-menu">Eventos del teclado</a>
+			<a href="#seccion-3" class="hijo-menu">Temporizador</a>
+			<a href="#seccion-4" class="hijo-menu">Seccion 4</a>
+		</div>
+		<div class="boton-flotante">
+			<button id="boton-flotante">
+				<i class="bx bx-menu"></i>
+			</button>
+		</div>
+		<script src="/js/app.js" type="module"></script>
+	</body>
+</html>

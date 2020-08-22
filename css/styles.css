@@ -1,0 +1,125 @@
+a {
+	text-decoration: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+button:active {
+	border-style: hidden;
+}
+:root {
+	--color-oro: gold;
+}
+/* Header */
+.encabezado {
+	position: sticky;
+	top: 0;
+	margin: 0 auto;
+	text-align: center;
+	background-color: yellow;
+}
+.encabezado h1 {
+	margin: 0;
+	padding: 20px 0;
+}
+
+/* BOTON FLOTANTE */
+.boton-flotante {
+	display: scroll;
+	position: fixed;
+	z-index: 999;
+	bottom: 20px;
+	right: 20px;
+}
+.boton-flotante button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+	border-radius: 50%;
+	border: none;
+	background-color: yellow;
+	transition: transform 0.3s;
+}
+
+.rotacion-90 {
+	transform: rotate(90deg);
+}
+
+/* MENU */
+
+.menu {
+	background-color: rgb(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 998;
+	top: 0px;
+	left: 0px;
+	transform: translateX(-100%);
+	transition: transform 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.hijo-menu:hover {
+	font-weight: bold;
+	background-color: gold;
+	color: black;
+}
+.hijo-menu {
+	transition: all 0.5s ease;
+}
+.menu a {
+	text-align: center;
+	width: 100%;
+	font-size: 30px;
+	color: gold;
+	padding: 40px 0;
+}
+.transladar-centro {
+	transform: translateX(0%);
+}
+
+/* Seccion */
+
+.seccion {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-top: rgba(0, 0, 0, 0.1) solid 1px;
+	height: 500px;
+	padding-top: 4rem;
+}
+.seccion:first-of-type {
+	margin-top: 0;
+}
+
+/* RELOJ */
+
+.reloj {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.226);
+}
+
+/*Eventos Teclado*/
+
+.contenedor-bola {
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.315);
+	width: 80%;
+	height: 400px;
+}
+.bola {
+	background-color: rgba(224, 21, 21, 0.315);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
