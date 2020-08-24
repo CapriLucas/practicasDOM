@@ -10,6 +10,9 @@ button:active {
 :root {
 	--color-oro: gold;
 }
+button {
+	cursor: pointer;
+}
 /* Header */
 .encabezado {
 	position: sticky;
@@ -44,6 +47,15 @@ button:active {
 
 .rotacion-90 {
 	transform: rotate(90deg);
+}
+
+.boton-subir {
+	right: 75px;
+	transition: opacity 1s;
+}
+.hidden {
+	visibility: hidden;
+	opacity: 0;
 }
 
 /* MENU */
