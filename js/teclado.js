@@ -20,10 +20,6 @@ export function moverBola(bola, contenedor) {
 		3;
 
 	d.addEventListener("keydown", e => {
-		console.log(e);
-		console.log(x);
-		console.log(X_MAX);
-
 		if (e.key == "ArrowUp" && y > 0) {
 			e.preventDefault();
 			y -= 10;

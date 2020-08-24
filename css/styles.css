@@ -13,6 +13,12 @@ button:active {
 button {
 	cursor: pointer;
 }
+.fondo-negro {
+	background-color: rgba(0, 0, 0, 0.897);
+}
+.fuente-gold {
+	color: gold;
+}
 /* Header */
 .encabezado {
 	position: sticky;
@@ -43,6 +49,10 @@ button {
 	border: none;
 	background-color: yellow;
 	transition: transform 0.3s;
+}
+.dark-mode {
+	left: 20px;
+	right: unset;
 }
 
 .rotacion-90 {
