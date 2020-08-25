@@ -6,6 +6,9 @@ import { botonSubir } from "./boton_subir.js";
 import { darkMode } from "./dark_mode.js";
 import { responsiveMedia } from "./responsive.js";
 import { responsiveTester } from "./responsive_tester.js";
+import { userAgent } from "./user_agent.js";
+import { detectorConexion } from "./conexion.js";
+import { webCam } from "./web_cam.js";
 const d = document;
 d.addEventListener("DOMContentLoaded", e => {
 	hamburguesa("#boton-flotante", ".menu", ".menu a");
@@ -34,6 +37,8 @@ d.addEventListener("DOMContentLoaded", e => {
 		`<a href="https://goo.gl/maps/Dv3qHmKs628E288w9" target="_blank">Casa del bananero</a>`
 	);
 	responsiveTester("form-responsive-tester");
+	userAgent(".user-agent");
+	webCam("#seccion-7");
 });
-
+detectorConexion();
 darkMode("#boton-flotante-dark");
